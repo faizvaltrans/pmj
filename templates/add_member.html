@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add Member</title></head>
+<body>
+  <h2>Add Member</h2>
+  <form method="post">
+    <label>Name:</label><input name="name" required><br>
+    <label>Phone:</label><input name="phone" required><br>
+    <label>Emirate:</label>
+    <select name="emirate" required>
+      <option>Dubai</option>
+      <option>Sharjah</option>
+      <option>Ajman</option>
+      <option>Abu Dhabi</option>
+      <option>Al Ain</option>
+      <option>Northern Emirates</option>
+    </select><br>
+    <button type="submit">Add Member</button>
+  </form>
+  <p><a href="{{ url_for('dashboard') }}">Back to Dashboard</a></p>
+</body>
+</html>
